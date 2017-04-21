@@ -16,7 +16,7 @@ title: "GR8975-edition"
   
     <li class="post-title">
       <a href="{{ site.baseurl }}{{ item.url }}">
-        <i>{{ item.title }}</i> {{item.folio}}{% if item.annotation == 'true' %}*isTrue*{% endif %}{{item.annotation}}
+        <i>{{ item.title }}</i> {{item.folio}}{% if item.annotation == 'true' %}*isTrue*{% endif %}_{{item.annotation}}
       </a>
     </li>
   {% endfor %}
