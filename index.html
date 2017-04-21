@@ -10,7 +10,7 @@ title: "GR8975-edition"
 <hr>
 
 <div class="toc">
-        <h2><i>{{ item.title }}</i> {{item.folio}}{% if item.annotation != 'true' %} isTrue {% endif %}_{{item.annotation}}</h2>
+        <h2><i>{{ item.title }}</i> {{item.folio}}{% if item.annotation == 'true' %} isTrue {% endif %}_{{item.annotation}}</h2>
        <h2><i>{{ item.title }}</i> {{item.folio}}{% if 1  %} True {% endif %}_{{item.annotation}}</h2>
 
   <h2>Table of Contents</h2>
@@ -19,7 +19,7 @@ title: "GR8975-edition"
   
     <li class="post-title">
       <a href="{{ site.baseurl }}{{ item.url }}">
-        <i>{{ item.title }}</i> {{item.folio}}{% if item.annotation != 'true' %} isTrue {% endif %}_{{item.annotation}}
+        <i>{{ item.title }}</i> {{item.folio}}{% if item.annotation == 'true' %} isTrue {% endif %}_{{item.annotation}}
        <br/><i>{{ item.title }}</i> {{item.folio}}{% if 1  %} True {% endif %}_{{item.annotation}}
 
       </a>
