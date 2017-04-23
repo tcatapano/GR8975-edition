@@ -7,7 +7,7 @@ layout: default
   <p class="post-title">
  {% assign tags = page.tags %}
  {% for tag in tags %}
-	<a href="#{{ tag | slugify }}"> {{ tag }} </a>
+	<span class="post-tag"> {{ tag }} </span>
 {% endfor %}
 </p>
 <!--  <p class="citation"> by {{ page.author }}</p>-->
