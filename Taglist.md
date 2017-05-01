@@ -4,6 +4,10 @@ title: List of Materials
 ---
 {% capture tags %}{% for item in site.texts %}{% for t in item.tags%}{{ t }}{% unless forloop.last %}^{% endunless %}{% endfor %}{% unless forloop.last %}^{% endunless %}{% endfor %}
 {% endcapture %}{% assign tag_list = tags | strip | strip_newlines| split: "^" | uniq %}{% for uniq_t in tag_list %}- {{ uniq_t }}
+
+
+{% endfor %}
+
 {% comment %}
 =======================
 The purpose of this snippet is to list all your posts posted with a certain tag.
@@ -30,10 +34,6 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
      {% endfor %}
     </ul>
 {% endfor %}
-
-{% endfor %}
-
-
 
 
 <!--
