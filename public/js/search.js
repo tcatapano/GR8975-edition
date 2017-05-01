@@ -52,13 +52,7 @@ function doSearch() {
   var query = $('input#search').val();
 
   //The search is then launched on the index built with Lunr
-  var result = index.search(query,{
-    "fields": {
-        "title": {"boost": 2},
-        "content": {"boost": 1}
-    },
-    "bool": "AND"
-});
+  var result = index.search(query);
   resultdiv.empty();
   if (result.length == 0) {
     resultdiv.append('<p class="">No results found.</p>');
@@ -70,7 +64,7 @@ function doSearch() {
   //Loop through, match, and add results
   for (var item in result) {
     var ref = result[item].ref;
-    var searchitem = '<div class="result"><p><a href="{{ site.baseurl }}'+store[ref].link+'?q='+query+'">'+store[ref].title+'</a></p></div>';
+    var searchitem = '<div class="result"></br><a href="'+store[ref].link+' " class="post-title" style="font-size:1em;">'+store[ref].title+'</a><p style="font-size:.8em"><i>'+store[ref].summary+'</i></p></div>';
     resultdiv.append(searchitem);
   }
 }
