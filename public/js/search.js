@@ -55,7 +55,7 @@ function doSearch() {
   var result = index.search(query,{
     "fields": {
         "title": {"boost": 2},
-        "body": {"boost": 1}
+        "content": {"boost": 1}
     },
     "bool": "AND"
 };
