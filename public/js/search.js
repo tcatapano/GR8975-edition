@@ -7,7 +7,7 @@
 
 var index = elasticlunr(function () {
   this.addField('title')
-  this.addField('author')
+  this.addField('tags')
   this.addField('layout')
   this.addField('content')
   this.setRef('id')
@@ -19,7 +19,7 @@ var index = elasticlunr(function () {
 {% assign count = 0 %}{% for text in site.texts %}
 index.addDoc({
   title: {{text.title | jsonify}},
-  author: {{text.author | jsonify}},
+  author: {{text.tags | jsonify}},
   layout: {{text.layout | jsonify}},
   content: {{text.content | jsonify | strip_html}},
   id: {{count}}
@@ -31,7 +31,7 @@ console.log( jQuery.type(index) );
 
 var store = [{% for text in site.texts %}{
   "title": {{text.title | jsonify}},
-  "author": {{text.author | jsonify}},
+  "author": {{text.tags | jsonify}},
   "layout": {{ text.layout | jsonify }},
   "link": {{text.url | jsonify}},
 }
