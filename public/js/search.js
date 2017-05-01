@@ -52,7 +52,8 @@ function doSearch() {
   var query = $('input#search').val();
 
   //The search is then launched on the index built with Lunr
-  var result = index.search(query);
+  var result = index.search(query,
+                            boolean: "AND");
   resultdiv.empty();
   if (result.length == 0) {
     resultdiv.append('<p class="">No results found.</p>');
