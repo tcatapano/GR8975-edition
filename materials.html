@@ -14,7 +14,7 @@ The following part extracts all the tags from your posts and sort tags, so that 
     {% assign ttags = text.tags | join:'|' | append:'|' %}
     {% assign rawtags = rawtags | append:ttags %}
 {% endfor %}
-{% assign rawtags = rawtags | split:'|' | downcase | sort %}
+{% assign rawtags = rawtags | downcase | split:'|'  | sort %}
 
 {% comment %}
 =======================
