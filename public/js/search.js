@@ -53,11 +53,11 @@ function doSearch() {
 
   //The search is then launched on the index built with Lunr
   var result = index.search(query,{
-    fields: {
-        title: {boost: 2},
-        content: {boost: 1}
+    "fields": {
+        "title": {"boost": 2},
+        "body": {"boost": 1}
     },
-    boolean: "AND"
+    "boolean": "AND"
 };
   resultdiv.empty();
   if (result.length == 0) {
