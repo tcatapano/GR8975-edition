@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tag
+title: List of Materials
 ---
 
 {% comment %}
@@ -55,13 +55,13 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
          {% if text.tags contains tag %}
          <li>
          <p>
-         <a href="{{ text.url }}">
+         <a href="{{ text. }}">
          {{ text.title }}
          </a>
          <small>- {{ text.folio }}</small>
          <br/>
          {% for tag in text.tags %}
-             <a class="tag small" href="#{{ tag | slugify }}">{{ tag }}</a>
+             <a class="tag small" href="#{{ tag | slugify }}"><span class="post-tag"> {{ tag }} </span></a>
          {% endfor %}
          </p>
          </li>
