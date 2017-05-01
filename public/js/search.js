@@ -19,7 +19,7 @@ var index = elasticlunr(function () {
 {% assign count = 0 %}{% for text in site.texts %}
 index.addDoc({
   title: {{text.title | jsonify}},
-  author: {{text.tags | jsonify}},
+  tags: {{text.tags | jsonify}},
   layout: {{text.layout | jsonify}},
   content: {{text.content | jsonify | strip_html}},
   id: {{count}}
@@ -31,7 +31,7 @@ console.log( jQuery.type(index) );
 
 var store = [{% for text in site.texts %}{
   "title": {{text.title | jsonify}},
-  "author": {{text.tags | jsonify}},
+  "tags": {{text.tags | jsonify}},
   "layout": {{ text.layout | jsonify }},
   "link": {{text.url | jsonify}},
 }
@@ -52,8 +52,13 @@ function doSearch() {
   var query = $('input#search').val();
 
   //The search is then launched on the index built with Lunr
-  var result = index.search(query,
-                            boolean: "AND");
+  var result = index.search(query,{
+    fields: {
+        title: {boost: 2},
+        content: {boost: 1}
+    },
+    boolean: "AND"
+};
   resultdiv.empty();
   if (result.length == 0) {
     resultdiv.append('<p class="">No results found.</p>');
