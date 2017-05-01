@@ -57,7 +57,7 @@ function doSearch() {
         "title": {"boost": 2},
         "body": {"boost": 1}
     },
-    "boolean": "AND"
+    "bool": "AND"
 };
   resultdiv.empty();
   if (result.length == 0) {
