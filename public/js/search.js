@@ -57,8 +57,8 @@ function doSearch() {
         "title": {"boost": 2},
         "content": {"boost": 1}
     },
-    "boolean": "AND"
-};
+    "bool": "AND"
+});
   resultdiv.empty();
   if (result.length == 0) {
     resultdiv.append('<p class="">No results found.</p>');
