@@ -4,8 +4,6 @@ title: List of Materials
 ---
 {% capture tags %}{% for item in site.texts %}{% for t in item.tags%}{{ t }}{% unless forloop.last %}^{% endunless %}{% endfor %}{% unless forloop.last %}^{% endunless %}{% endfor %}
 {% endcapture %}{% assign tag_list = tags | strip | strip_newlines| split: "^" | uniq %}{% for uniq_t in tag_list %}- {{ uniq_t }}
-{% endfor %}
-
 {% comment %}
 =======================
 The purpose of this snippet is to list all your posts posted with a certain tag.
@@ -15,15 +13,15 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
     <h2 id="{{ tag | slugify }}">{{ tag }}</h2>
     <ul>
      {% for post in site.texts %}
-         {% if post.tags contains tag %}
+         {% if te.tags contains tag %}
          <li>
          <p>
          <a href="{{ text.url }}">
          {{ texts.title }}
          </a>
-         <small>- {{ texts.folio }}</small>
+         <small>- {{ text.folio }}</small>
          <br/>
-         {% for tag in texts.tags %}
+         {% for tag in text.tags %}
              <a class="tag small" href="#{{ tag | slugify }}">{{ tag }}</a>
          {% endfor %}
          </p>
@@ -32,6 +30,10 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
      {% endfor %}
     </ul>
 {% endfor %}
+
+{% endfor %}
+
+
 
 
 <!--
