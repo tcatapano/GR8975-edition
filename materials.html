@@ -11,10 +11,10 @@ The following part extracts all the tags from your posts and sort tags, so that 
 {% endcomment %}
 {% assign rawtags = "" %}
 {% for text in site.texts %}
-    {% assign ttags = text.tags | join:'|' | append:'|' %}
+    {% assign ttags = text.tags | downcase | join:'|' | append:'|' %}
     {% assign rawtags = rawtags | append:ttags %}
 {% endfor %}
-{% assign rawtags = rawtags | downcase | split:'|'  | sort %}
+{% assign rawtags = rawtags | split:'|'  | sort %}
 
 {% comment %}
 =======================
