@@ -19,6 +19,10 @@ title: "GR8975-edition"
       <a href="{{ site.baseurl }}{{ item.url }}">
         <i>{{ item.title }}</i> - {{item.folio}}{% if item.annotation == true %} * {% endif %}
       </a>
+      <br/>{% assign cats = texts.categories %}
+        {% for cat in cat %}
+	        <span class="post-tag"> {{ cat }} </span>
+      {% endfor %}
     </li>
   {% endfor %}
   </ul>  
