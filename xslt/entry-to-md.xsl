@@ -128,7 +128,7 @@
         <xsl:text>- - - - - &lt;a href="</xsl:text>
         <xsl:value-of select="@url"/>
         <xsl:text>" target="_blank"&gt;</xsl:text>
-<!--        <xsl:text>&lt;img src="https://github.com/cu-mkp/GR8975-edition/assets/photo-icon.png" alt="folio image: " style="display:inline-block; margin-bottom:-3px;"/&gt;</xsl:text>-->
+        <xsl:text>&lt;img src="https://cu-mkp.github.io/GR8975-edition/assets/photo-icon.png" alt="folio image: " style="display:inline-block; margin-bottom:-3px;"/&gt;</xsl:text>
         <xsl:value-of select="@number"/>
         <xsl:text>&lt;/a&gt; - - - - -</xsl:text>
         <xsl:text> &lt;/div&gt;</xsl:text>
