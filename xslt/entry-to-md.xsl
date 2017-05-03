@@ -133,6 +133,22 @@
         <xsl:text>&lt;/a&gt; - - - - -</xsl:text>
         <xsl:text> &lt;/div&gt;</xsl:text>
     </xsl:template>
+    
+    
+    <!-- annotations -->
+    <xsl:template match="annotations">
+        <xsl:text>&lt;div class="annotation" align="center"&gt;</xsl:text>
+        <xsl:apply-templates select="annotation"/>
+        <xsl:text> &lt;/div&gt;</xsl:text>
+    </xsl:template>
+
+<xsl:template match="annotation">
+    <xsl:text>&lt;a href="</xsl:text>
+    <xsl:value-of select="@url"/>
+    <xsl:text>" target="_blank"&gt;</xsl:text>
+    <xsl:value-of select="@title"/>
+    <xsl:text>&lt;/a&gt;</xsl:text>
+</xsl:template>
 
     <xsl:template match="purpose">
         <xsl:apply-templates/>
