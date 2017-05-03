@@ -215,6 +215,7 @@ blockquote {
 	/*font-style: italic;*/
 	/*added by TC*/
 	background-color: tan;
+	font-size: 75%;
 }
 
 blockquote p:last-child {
