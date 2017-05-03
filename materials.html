@@ -11,7 +11,7 @@ The following part extracts all the tags from your posts and sort tags, so that 
 {% endcomment %}
 {% assign rawtags = "" %}
 {% for text in site.texts %}
-    {% assign ttags = text.tags | downcase | join:'|' | append:'|' %}
+    {% assign ttags = text.materials | downcase | join:'|' | append:'|' %}
     {% assign rawtags = rawtags | append:ttags %}
 {% endfor %}
 {% assign rawtags = rawtags | split:'|'  | sort %}
@@ -52,7 +52,7 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
     <h2 id="{{ tag | slugify }}">{{ tag }}</h2>
     <ul>
      {% for text in site.texts %}
-        {% txtags = text.tags | downcase %}
+        {% txtags = text.materials | downcase %}
          {% if txtags contains tag %}
          <li>
          <p>
