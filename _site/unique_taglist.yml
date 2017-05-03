@@ -13,7 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
 
   <!--   Dublin Core metadata for Zotero -->  
-  <meta name="DC.title" content="" />
+  <meta name="DC.title" content="tag list" />
   <meta name="DC.creator" content="" />
   <meta name="DC.contributor" content="" />
   <meta name="DC.date" content="" />
@@ -23,7 +23,7 @@
     <!-- Open Graph metadata -->
 
     
-    <meta property="og:title" content=""/>
+    <meta property="og:title" content="tag list"/>
     <meta property="og:description" content="This edition uses the Jekyll theme Ed designed for textual editors based on minimal computing principles, and focused on legibility and flexibility.">
     <meta property="fb:admins" content="elotroalex"/>
     <meta property="og:type" content="website" />
@@ -37,7 +37,7 @@
    
   <title>
     
-      
+      tag list
     
   </title>
 
@@ -99,6 +99,12 @@
       
     
       
+        
+          <a class="sidebar-nav-item" href="/GR8975-edition/materials/">List of Materials</a>
+        
+      
+    
+      
     
       
         
@@ -108,10 +114,8 @@
     
       
         
-          <a class="sidebar-nav-item" href="/GR8975-edition/tag/">Tag</a>
+          <a class="sidebar-nav-item active" href="/GR8975-edition/unique_taglist.yml">tag list</a>
         
-      
-    
       
     
 
@@ -146,336 +150,8 @@
 
       <div class="container content" id="main">
         <div class="page">
-  <h1 class="page-title"></h1>
-  - white wax
-- coal
-- sulphur
-- charcoal
-- black sulphured wax
-- noyau
-- esbaucher wax
-- sand
-- sulfur
-- silver
-- copper
-- aqua fortis
-- 
-- Turpentine varnish
-- glue
-- wood
-- spike lavender
-- sandarac
-- Spike lavender
-- iron
-- colors
-- gum
-- colle de détrempe
-- glue colle de retailles
-- Lavender spike oil
-- lavender spike oil
-- sandarac gum
-- ebony
-- turpentine
-- linseed
-- mastic
-- plaster
-- colle de retaille
-- Aspic oil
-- aspic oil
-- soap
-- ashes
-- water
-- linseed oil
-- walnut oil
-- garlic
-- hog's fennel
-- bread
-- oil
-- black pitch
-- wheat
-- onions
-- pitch
-- paternoster beads
-- galipot
-- sands
-- spike lavender oil
-- charcoal black
-- lampblack
-- Turpentine
-- pine
-- salt
-- verdigris
-- vinegar
-- Steel
-- steel
-- emery
-- cuivre franc
-- rosette
-- tin
-- rosette copper
-- tripoli of Venice
-- paste
-- arene
-- tripoli
-- straw
-- quicksilver
-- marble
-- colle de retailles
-- pin filings
-- gold
-- Ceruse
-- lead
-- yellow ochre
-- mine
-- chalk
-- distemper glue
-- Armenian bole
-- sanguine
-- lamb tallow
-- bole
-- willow charcoal
-- tallow
-- saffron
-- candi sugar
-- rouge clair
-- Venice lake
-- Brazilwood
-- laque ronde
-- aspic
-- azure
-- azure enamel
-- enamel
-- yellow latten
-- wooden
-- ash
-- felt
-- white lead
-- massicot
-- black graphite
-- Minium
-- cotton
-- gilt
-- tinsel
-- smoke
-- cloth
-- velvet
-- satin
-- latten
-- lacquer
-- turpentine varnish
-- fer blanc
-- dragon's blood
-- spirits
-- vert de vessie
-- codfish skin
-- parchment
-- white wine
-- touchstone
-- pumice stone
-- walnuts
-- wine
-- marcasite
-- storax
-- urine
-- said water
-- honey
-- Gold
-- paper
-- fig tree milk
-- powder
-- lard
-- linen
-- ☿
-- mercury
-- diamonds
-- rubies
-- sapphires
-- oriental jacinths
-- emeralds
-- amethysts
-- sandstone
-- ☾
-- ☼
-- ♀
-- millet
-- pomole
-- baillard
-- orpiment
-- distemper
-- Green verditer
-- canne de batiste
-- canne
-- jasper
-- horn
-- cornaline
-- glass
-- talc
-- metal
-- cement
-- gum amoniacum
-- wool
-- Scudegrun
-- weld
-- ceruse
-- tempera
-- azur
-- alum
-- taffeta
-- batture
-- colle forte
-- Alum water
-- horse dung
-- eggs
-- yolks
-- white
-- thread
-- azur d’esmail
-- egg yolk
-- flower
-- azures
-- vert d'azur
-- stones
-- Azure
-- Azur d’esmail
-- aquis fortis
-- earth
-- mutton flesh
-- varnish
-- diamond
-- stone
-- sapphire
-- grease
-- leather
-- Sulfur
-- soot black
-- Soot black
-- Paper
-- cimolee
-- alabaster
-- lead white
-- egg white
-- fig tree
-- white varnish
-- Plaster
-- stucco
-- pearls
-- medal
-- stick
-- wax
-- cardboard
-- bitumen
-- Florence lacquer
-- gum water
-- vermillion
-- breadcrust
-- flour glue
-- gum arabic
-- rock alum
-- saffran
-- Green gum
-- green wax
-- Gilding wood
-- fig tree wood
-- partridge feather
-- olive oil
-- meat
-- natural sulphur
-- rosemary
-- Tin
-- pipe
-- solder
-- soft tin
-- glass tin
-- slate
-- carton
-- quicklime
-- cork
-- Lead
-- distilled vinegar
-- oyster shells
-- glasse
-- coarse salt
-- good vinegar
-- white iron
-- Turnipseed oil
-- vitriol
-- saltpeter
-- old flour
-- Sublimate
-- sal ammoniac
-- borax
-- flowers
-- leaves
-- raw plaster
-- crushed brick
-- stone alum
-- Dilute sal ammoniac
-- crocum ferri
-- Plaster of Paris
-- sugar
-- Spalt
-- cooked plaster
-- chalk from Champagne
-- gemstones
-- essence of sal ammoniac
-- murky water
-- plant
-- looking-glass tin
-- resin
-- pure tin
-- pure lead
-- plants
-- bismuth
-- pith of bread
-- mixed
-- brique
-- brick
-- wheat oil
-- goldsmith's cement
-- light oil colors
-- laquer
-- potter's earth
-- clay
-- iron wire
-- crocum
-- candle wax
-- melted butter
-- butter
-- Wax
-- cinnabar mixed with oil
-- lean earth that artillery founders and bell founders use to make their trusseaulx and molds
-- which is lean and sandy
-- horse manure
-- cloth waste or cloth shavings
-- crocum sand
-- mold
-- oil colors
-- marigold flowers
-- minium
-- vert-de-gris
-- rose
-- marigold
-- wax relief
-- tempered sand
-- half of your lead figure which you have oiled
-- clay base
-- white plaster
-- black wax mixed with sulphur
-- hot urine
-- half figure in lead
-- bleach
-- half figure
-- perfume
-- black wax
-- melted sulphur
-- melted wax
-- resin.
-- Relief awls
-- untempered steel
-- Rue vinegar
-- crushed juniper berries
-- rue and berries crushed together
-
+  <h1 class="page-title">tag list</h1>
+  
 
 # replace +++collection+++ with .posts, .pages, or a collection in config
 # replace +++tags+++ with the yml list you're interested in (materials?)

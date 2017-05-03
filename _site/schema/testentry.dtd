@@ -1,0 +1,153 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT entry (#PCDATA|activity|block|figure|folio|heading|purpose|annotations|list|margin-block)*>
+<!ATTLIST entry
+  group NMTOKEN #IMPLIED
+  identifier NMTOKEN #REQUIRED>
+
+<!ELEMENT entry_group (folio,(block|heading)+)>
+<!ATTLIST entry_group
+  identifier NMTOKEN #REQUIRED>
+
+<!ELEMENT annotations (annotation)>
+<!ATTLIST annotations
+  >
+
+
+<!ELEMENT list (foreign|item+)>
+<!ATTLIST list  
+  purpose NMTOKEN #IMPLIED>
+
+<!ELEMENT margin-block (#PCDATA|animal|material|tool)*>
+<!ATTLIST margin-block
+  position NMTOKEN #REQUIRED
+  purpose CDATA #IMPLIED>
+
+<!ELEMENT annotation EMPTY>
+<!ATTLIST annotation  
+  title CDATA #REQUIRED
+  url CDATA #REQUIRED>
+
+
+<!ELEMENT personal_name (#PCDATA)>
+<!ATTLIST personal_name
+  >
+
+<!ELEMENT figure EMPTY>
+<!ATTLIST figure
+  identifier NMTOKEN #IMPLIED
+  number NMTOKEN #IMPLIED
+  position NMTOKEN #IMPLIED
+  url CDATA #IMPLIED>
+
+<!ELEMENT heading (#PCDATA|color|foreign|material|material_format|plant
+                   |profession|tool)*>
+<!ATTLIST heading
+  position NMTOKEN #IMPLIED>
+
+<!ELEMENT purpose (#PCDATA|activity|color|currency|material
+                   |material_format|place|plant|profession|ref
+                   |sub_recipe|time|tool|unit)*>
+<!ATTLIST purpose
+  type NMTOKEN #REQUIRED>
+
+<!ELEMENT profession (#PCDATA)>
+<!ATTLIST profession
+  >
+
+<!ELEMENT place (#PCDATA)>
+<!ATTLIST place
+  >
+
+<!ELEMENT folio EMPTY>
+<!ATTLIST folio
+  number NMTOKEN #IMPLIED
+  url CDATA #IMPLIED>
+
+<!ELEMENT block (#PCDATA|activity|animal|color|currency|figure|foreign
+                 |material|material_format|place|plant|profession
+                 |purpose|ref|sub_recipe|time|tool|unit
+                 |name|note|people|q|sup)*>
+<!ATTLIST block
+  identifier NMTOKEN #IMPLIED
+  location NMTOKEN #IMPLIED
+  position NMTOKEN #IMPLIED
+  purpose CDATA #IMPLIED>
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+    type NMTOKEN #REQUIRED>
+
+<!ELEMENT note (#PCDATA)>
+<!ATTLIST note
+  >
+
+<!ELEMENT people (#PCDATA)>
+<!ATTLIST people
+  >
+
+<!ELEMENT q (foreign)>
+<!ATTLIST q
+  >
+
+<!ELEMENT sup (#PCDATA|material)*>
+<!ATTLIST sup
+  >
+
+<!ELEMENT material (#PCDATA|animal|color|foreign|place|plant
+                    |profession)*>
+<!ATTLIST material
+  type NMTOKEN #IMPLIED>
+
+<!ELEMENT animal (#PCDATA)>
+<!ATTLIST animal
+  >
+
+<!ELEMENT tool (#PCDATA|foreign|material|material_format|plant|tool)*>
+<!ATTLIST tool
+  >
+
+<!ELEMENT item (#PCDATA|material|tool|unit)*>
+<!ATTLIST item
+  >
+
+<!ELEMENT foreign (#PCDATA|item)*>
+<!ATTLIST foreign
+  language NMTOKEN #IMPLIED>
+
+<!ELEMENT material_format (#PCDATA|color|material)*>
+<!ATTLIST material_format
+  >
+
+<!ELEMENT color (#PCDATA)>
+<!ATTLIST color
+  >
+
+<!ELEMENT plant (#PCDATA|foreign)*>
+<!ATTLIST plant
+  >
+
+<!ELEMENT sub_recipe (#PCDATA|material|tool)*>
+<!ATTLIST sub_recipe
+  type NMTOKEN #IMPLIED>
+
+<!ELEMENT activity (#PCDATA|material)*>
+<!ATTLIST activity
+  type CDATA #REQUIRED>
+
+<!ELEMENT unit (#PCDATA|tool)*>
+<!ATTLIST unit
+  >
+
+<!ELEMENT ref (#PCDATA)>
+<!ATTLIST ref
+  identifier NMTOKEN #IMPLIED
+  type NMTOKEN #IMPLIED>
+
+<!ELEMENT currency (#PCDATA)>
+<!ATTLIST currency
+  >
+
+<!ELEMENT time (#PCDATA)>
+<!ATTLIST time
+  >
