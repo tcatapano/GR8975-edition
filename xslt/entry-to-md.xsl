@@ -67,22 +67,22 @@
             <xsl:text>rights: Public Domain&#x0A;</xsl:text>
             <xsl:text>purposes: </xsl:text>
             <xsl:text>[</xsl:text>
-            <xsl:value-of select="$activities"/>
+            <xsl:value-of select="translate(translate($purposes, '[', ''), ']', '')"/>
             <xsl:text>]</xsl:text>
             <xsl:text>&#x0A;</xsl:text>
             <xsl:text>activities: </xsl:text>
             <xsl:text>[</xsl:text>
-            <xsl:value-of select="$activities"/>
+            <xsl:value-of select="translate(translate($activities, '[', ''), ']', '')"/>
             <xsl:text>]</xsl:text>
             <xsl:text>&#x0A;</xsl:text>
             <xsl:text>materials: </xsl:text>
             <xsl:text>[</xsl:text>
-                <xsl:value-of select="$materials"/>
+            <xsl:value-of select="translate(translate($materials, '[', ''), ']', '')"/>
             <xsl:text>]</xsl:text>
             <xsl:text>&#x0A;</xsl:text>
             <xsl:text>tools: </xsl:text>
             <xsl:text>[</xsl:text>
-            <xsl:value-of select="$tools"/>
+            <xsl:value-of select="translate(translate($tools, '[', ''), ']', '')"/>
             <xsl:text>]</xsl:text>
             <xsl:text>&#x0A;</xsl:text>
             <xsl:text>---&#x0A;&#x0A;</xsl:text>
